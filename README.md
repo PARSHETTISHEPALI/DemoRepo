@@ -1,2 +1,2 @@
 # DemoRepo
-Firit demo repository
+First demo repository
