@@ -1,0 +1,26 @@
+#!/bin/bash -x
+
+declare -A sounds    #declaring dictionary
+sounds[dog]="bark"
+sounds[bird]="tweet"
+sounds[cat]="meow"
+sounds[wolf]="howl"
+
+#echo bird sounds ${sounds[bird]}      #to retrieve value
+#echo dog sounds ${sounds[dog]}
+
+#echo Animals ${!sounds[@]}  #to retrieve all   the keys
+
+#echo animals ${sounds[@]}  #to retrieve all the values
+
+#echo ${#sounds[@]}   #to display total num of key_value pair in dictionary
+
+#unset sounds[cat]    #to delete the key pair in dict
+#echo animals ${!sounds[@]}   # to check if its deleted
+
+#to get the key_vale pair together
+for animal in "${!sounds[@]}"
+do
+    echo "$animal ${sounds[$animal]}"
+done
+
